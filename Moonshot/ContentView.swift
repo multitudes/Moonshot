@@ -8,28 +8,14 @@
 
 import SwiftUI
 
-struct Hike {
-    let url: String
-    init(url: String){
-        self.url = url
-    }
-}
+
 
 struct ContentView: View {
-    let hike: Hike
-    @State private var zoomed = false
-    
     var body: some View {
-        VStack {
-            Image(hike.url)
-            .resizable()
-                .aspectRatio(contentMode: self.zoomed ? .fill : .fit)
-                .onTapGesture {
-                    withAnimation {
-                        self.zoomed.toggle()
-                    }
-            }
-        } .navigationBarTitle(Text(hike.url))
+        
+        
+        
+
     }
 }
     struct ContentView_Previews: PreviewProvider {
