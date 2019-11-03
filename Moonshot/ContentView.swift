@@ -18,11 +18,12 @@ struct ContentView: View {
     var body: some View {
         NavigationView {
             List(missions) { mission in
-                NavigationLink(destination: Text("DetailView")) {
+                NavigationLink(destination: MissionView(mission: mission, astronauts: self.astronauts))  {
                     Image(mission.image)
                         .resizable()
                         .scaledToFit()
                         .frame(width: 44, height: 44)
+                    
                     VStack(alignment: .leading) {
                         Text(mission.displayName)
                             .font(.headline)

@@ -16,11 +16,16 @@ extension Bundle {
         guard let data = try? Data(contentsOf: url) else {
             fatalError("failed to load file from bundle")
         }
+        
+        // create our JSON decoder
         let decoder = JSONDecoder()
         
+        // create a date formatter
         let formatter = DateFormatter()
+        // specify the format we want
         formatter.dateFormat = "y-MM-dd"
         
+        // and add it to our decoder!
         decoder.dateDecodingStrategy = .formatted(formatter)
         
         
