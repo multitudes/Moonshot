@@ -13,6 +13,7 @@
 		4547F1D1236C5DFD0078C519 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4547F1D0236C5DFD0078C519 /* Assets.xcassets */; };
 		4547F1D4236C5DFD0078C519 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4547F1D3236C5DFD0078C519 /* Preview Assets.xcassets */; };
 		4547F1D7236C5DFD0078C519 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4547F1D5236C5DFD0078C519 /* LaunchScreen.storyboard */; };
+		45674900236D9C1A005CC106 /* Mission.swift in Sources */ = {isa = PBXBuildFile; fileRef = 456748FF236D9C1A005CC106 /* Mission.swift */; };
 		45CD1622236D86B0005C1403 /* astronauts.json in Resources */ = {isa = PBXBuildFile; fileRef = 45CD1620236D86B0005C1403 /* astronauts.json */; };
 		45CD1623236D86B0005C1403 /* missions.json in Resources */ = {isa = PBXBuildFile; fileRef = 45CD1621236D86B0005C1403 /* missions.json */; };
 		45CD1625236D87B1005C1403 /* Astronaut.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45CD1624236D87B1005C1403 /* Astronaut.swift */; };
@@ -28,6 +29,7 @@
 		4547F1D3236C5DFD0078C519 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		4547F1D6236C5DFD0078C519 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4547F1D8236C5DFD0078C519 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		456748FF236D9C1A005CC106 /* Mission.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mission.swift; sourceTree = SOURCE_ROOT; };
 		45CD1620236D86B0005C1403 /* astronauts.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = astronauts.json; sourceTree = "<group>"; };
 		45CD1621236D86B0005C1403 /* missions.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = missions.json; sourceTree = "<group>"; };
 		45CD1624236D87B1005C1403 /* Astronaut.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Astronaut.swift; sourceTree = "<group>"; };
@@ -68,9 +70,10 @@
 				4547F1CC236C5DFA0078C519 /* SceneDelegate.swift */,
 				45CD1620236D86B0005C1403 /* astronauts.json */,
 				45CD1621236D86B0005C1403 /* missions.json */,
-				4547F1CE236C5DFA0078C519 /* ContentView.swift */,
 				45CD1624236D87B1005C1403 /* Astronaut.swift */,
+				456748FF236D9C1A005CC106 /* Mission.swift */,
 				45CD1626236D8877005C1403 /* Bundle-Decodable.swift */,
+				4547F1CE236C5DFA0078C519 /* ContentView.swift */,
 				4547F1D0236C5DFD0078C519 /* Assets.xcassets */,
 				4547F1D5236C5DFD0078C519 /* LaunchScreen.storyboard */,
 				4547F1D8236C5DFD0078C519 /* Info.plist */,
@@ -160,6 +163,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				45674900236D9C1A005CC106 /* Mission.swift in Sources */,
 				4547F1CB236C5DFA0078C519 /* AppDelegate.swift in Sources */,
 				4547F1CD236C5DFA0078C519 /* SceneDelegate.swift in Sources */,
 				45CD1627236D8877005C1403 /* Bundle-Decodable.swift in Sources */,
@@ -232,7 +236,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -286,7 +290,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
